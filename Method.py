@@ -8,7 +8,7 @@ def Normalize(l):
     # list의 원소들의 값을 normalize
     temp = sum([i ** 2 for i in l]) ** (1/2)
     if temp == 0:
-        return 0
+        return l
     else:
         return [i / temp for i in l]
 
